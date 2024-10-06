@@ -4,6 +4,36 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Custom Template</title>
+    <script>
+      // Function to get query parameters from the URL
+      function getQueryParams() {
+          let params = {};
+          let queryString = window.location.search;
+          let urlParams = new URLSearchParams(queryString);
+
+          // Iterate over the parameters and store them
+          for (let [key, value] of urlParams.entries()) {
+              params[key] = value;
+          }
+          return params;
+      }
+
+      // Function to display the query parameters on the page
+      function displayParams() {
+          let params = getQueryParams();
+          let displayArea = document.getElementById("header");
+          displayArea.innerHTML = "";
+
+          for (let key in params) {
+              if (key === 'header') {
+                displayArea.innerHTML = `${params[key]}`
+              }
+          }
+      }
+
+      // Run the display function after the page loads
+      window.onload = displayParams;
+  </script>
     <style>
       body {
         font-family: Arial, sans-serif;
@@ -11,15 +41,11 @@
         margin: 0px;
         padding: 0px;
       }
-      .umap-popup {
-        background-color: aquamarine !important;
-        width: 600px !important;
-      }
       .container {
         background-color: white;
         height: 100%;
         width: calc(100% - 40px);
-        padding: 20px;
+        padding: 30px;
         overflow: hidden;
         border-radius: 8px;
         box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
@@ -32,10 +58,17 @@
         height: 355px;
         width: 355px;
       }
+      #header {
+        font-weight: 700;
+        line-height: 1.125;
+      }
       
     </style>
   </head>
   <body>
+    <div id="header">
+      <!-- Query parameters will be displayed here -->
+    </div>
     <div class="container">
       <p>
         This development will begin breaking ground in summer of 2022.
