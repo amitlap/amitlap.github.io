@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Custom Template</title>
+    <script>
+      // Function to get query parameters from the URL
+      function getQueryParams() {
+          let params = {};
+          let queryString = window.location.search;
+          let urlParams = new URLSearchParams(queryString);
+
+          // Iterate over the parameters and store them
+          for (let [key, value] of urlParams.entries()) {
+              params[key] = value;
+          }
+          return params;
+      }
+
+      // Function to display the query parameters on the page
+      function displayParams() {
+        const dictionary = {
+            VanBuren: 'Van Buren Project'
+        }
+          let params = getQueryParams();
+          let displayArea = document.getElementById("header");
+          displayArea.innerHTML = "";
+
+          for (let key in params) {
+              if (key === 'header') {
+                const name = params[key]
+                displayArea.innerHTML = `${dictionary[name] || name}`
+              }
+          }
+      }
+
+      // Run the display function after the page loads
+      window.onload = displayParams;
+  </script>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        background-color: #f0f0f0;
+        margin: 0px;
+        padding: 0px;
+      }
+      .header-container {
+        background-color: white;
+        height: 100%;
+        width: calc(100% - 40px);
+        overflow: hidden;
+        border-radius: 8px;
+        box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+        display: grid;
+      }
+      #header {
+        font-size: 1.4em;
+        font-weight: bold;
+        margin: 5px 0px;
+      }
+      
+    </style>
+  </head>
+  <body>
+    <div class="header-container">
+      <div id="header"></div>
+    </div>
+  </body>
+</html>
+
