@@ -3,7 +3,8 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Custom Template</title>
+    <link>
+    <title>Custom Header</title>
     <script>
       // Function to get query parameters from the URL
       function getQueryParams() {
@@ -20,9 +21,6 @@
 
       // Function to display the query parameters on the page
       function displayParams() {
-        const dictionary = {
-            VanBuren: 'Van Buren Project'
-        }
           let params = getQueryParams();
           let displayArea = document.getElementById("header");
           displayArea.innerHTML = "";
@@ -30,7 +28,7 @@
           for (let key in params) {
               if (key === 'header') {
                 const name = params[key]
-                displayArea.innerHTML = `${dictionary[name] || name}`
+                displayArea.innerHTML = `${headersInfoDictionary[name] || name}`
               }
           }
       }
@@ -63,6 +61,7 @@
     <div class="header-container">
       <div id="header"></div>
     </div>
+    <script src="./info/info.js"></script>
   </body>
 </html>
 
