@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Custom Collapse Example</title>
+    <script src="info/info.js"></script> <!-- Load the external JavaScript file -->
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        background-color: white;
+        margin: 0px;
+        padding: 0px;
+      }
+
+      .container {
+        background-color: white;
+        height: 100%;
+        overflow: hidden;
+        display: grid;
+      }
+
+      .hidden {
+        display: none;
+      }
+
+      .show {
+        display: block;
+      }
+
+      a {
+        cursor: pointer;
+        color: blue;
+        text-decoration: underline;
+        font-weight: 600;
+        font-size: small;
+      }
+      p {
+        margin: 2px;
+      }
+      h4 { 
+        margin: 2px;
+        font-size: 0.9 rem;
+      }
+    </style>
+  </head>
+  <body>
+    <div>
+      <h4 id="wantedText"></h4> <!-- Placeholder for wanted text -->
+    </div>
+
+    <!-- "See more" link above the content -->
+    <p>
+      <a id="toggleButton">See more</a>
+    </p>
+
+    <!-- Collapsible content -->
+    <div id="collapseContent" class="hidden">
+      <h4 id="moreText"></h4> <!-- Placeholder for more text -->
+      <!-- "See less" link at the bottom of expanded content -->
+      <p>
+        <a id="seeLessButton">See less</a>
+      </p>
+    </div>
+
+    <script>
+      // Get the elements from the DOM
+      const wantedTextElement = document.getElementById('wantedText');
+      const moreTextElement = document.getElementById('moreText');
+      const toggleButton = document.getElementById('toggleButton');
+      const collapseContent = document.getElementById('collapseContent');
+      const seeLessButton = document.getElementById('seeLessButton');
+
+      // Load text content from the external JS file
+      const wantedProjectTextObject = textContentInfo['fentonProject'];
+      wantedTextElement.innerHTML = wantedProjectTextObject?.wantedText || '';
+      moreTextElement.innerHTML = wantedProjectTextObject?.moreText || '';
+
+      // Add a click event listener to the "See more" button
+      toggleButton.addEventListener('click', function() {
+        // Show the collapsible content
+        collapseContent.classList.remove('hidden');
+        collapseContent.classList.add('show');
+        // Hide the "See more" button
+        toggleButton.style.display = 'none';
+      });
+
+      // Add a click event listener to the "See less" button
+      seeLessButton.addEventListener('click', function() {
+        // Hide the collapsible content
+        collapseContent.classList.remove('show');
+        collapseContent.classList.add('hidden');
+        // Show the "See more" button
+        toggleButton.style.display = 'block';
+      });
+    </script>
+  </body>
+</html>

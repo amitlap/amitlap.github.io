@@ -1,0 +1,94 @@
+{
+    "type": "FeatureCollection",
+    "features": [
+      {
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [42.85320728859998, -83.71900740774794]
+        },
+        "properties": {
+          "name": "Lake Fenton Sailing Club",
+          "description": "Seven lakes, hiking, and boating opportunities."
+        }
+      },
+      {
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [-83.7496, 42.7898]
+        },
+        "properties": {
+          "name": "Silver Lake Park",
+          "description": "Sandy beaches, picnic areas, and trails."
+        }
+      },
+      {
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [-83.7029, 42.7978]
+        },
+        "properties": {
+          "name": "Bush Park",
+          "description": "Community park with river access and playgrounds."
+        }
+      },
+      {
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [-83.7115, 42.7997]
+        },
+        "properties": {
+          "name": "Adelaide Park",
+          "description": "Neighborhood park with play equipment and green space."
+        }
+      },
+      {
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [-83.7823, 42.8161]
+        },
+        "properties": {
+          "name": "Linden County Park",
+          "description": "Picnic areas, sports fields, and disc golf course."
+        }
+      },
+      {
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [-83.7106, 42.8006]
+        },
+        "properties": {
+          "name": "Dauner-Martin Nature Preserve",
+          "description": "Woodland trails for hiking and birdwatching."
+        }
+      },
+      {
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [-83.7056, 42.7973]
+        },
+        "properties": {
+          "name": "Shiawassee River Heritage Water Trail",
+          "description": "Water trail for kayaking and canoeing."
+        }
+      },
+      {
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [-83.7042, 42.7924]
+        },
+        "properties": {
+          "name": "Triangle Park",
+          "description": "Small community park in downtown Fenton."
+        }
+      }
+    ]
+  }
+  
