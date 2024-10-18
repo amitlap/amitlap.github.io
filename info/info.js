@@ -22,6 +22,50 @@ const locationsImgsInfo = {
 const textContentInfo = {
   fentonProject: {
     wantedText: 'This development will begin breaking ground in summer of 2022. Rolling hills, large wooded area, secluded walking trails are just some of the attractions of this coming development.',
-    moreText: 'Located just half a mile from Fenton Lake and 2 miles north of the vibrant downtown Fenton area.'
+    moreText: `This development will begin breaking ground in summer of 2022. Rolling hills, large wooded areas, 
+            secluded walking trails are just some of the attractions of this coming development. 
+            Located just half a mile from Fenton Lake and 2 miles north of the vibrant downtown Fenton area.
+            This development will begin breaking ground in summer of 2022. Rolling hills, large wooded areas, 
+            secluded walking trails are just some of the attractions of this coming development. 
+            Located just half a mile from Fenton Lake and 2 miles north of the vibrant downtown Fenton area.
+            This development will begin breaking ground in summer of 2022. Rolling hills, large wooded areas, 
+            secluded walking trails are just some of the attractions of this coming development. 
+            Located just half a mile from Fenton Lake and 2 miles north of the vibrant downtown Fenton area.
+            This development will begin breaking ground in summer of 2022. Rolling hills, large wooded areas, 
+            secluded walking trails are just some of the attractions of this coming development. 
+            Located just half a mile from Fenton Lake and 2 miles north of the vibrant downtown Fenton area.
+            This development will begin breaking ground in summer of 2022. Rolling hills, large wooded areas, 
+            secluded walking trails are just some of the attractions of this coming development. 
+            Located just half a mile from Fenton Lake and 2 miles north of the vibrant downtown Fenton area.
+            This development will begin breaking ground in summer of 2022. Rolling hills, large wooded areas, 
+            secluded walking trails are just some of the attractions of this coming development. 
+            Located just half a mile from Fenton Lake and 2 miles north of the vibrant downtown Fenton area.
+            This development will begin breaking ground in summer of 2022. Rolling hills, large wooded areas, 
+            secluded walking trails are just some of the attractions of this coming development. 
+            Located just half a mile from Fenton Lake and 2 miles north of the vibrant downtown Fenton area.
+            This development will begin breaking ground in summer of 2022. Rolling hills, large wooded areas, 
+            secluded walking trails are just some of the attractions of this coming development. 
+            Located just half a mile from Fenton Lake and 2 miles north of the vibrant downtown Fenton area.
+            This development will begin breaking ground in summer of 2022. Rolling hills, large wooded areas, 
+            secluded walking trails are just some of the attractions of this coming development. 
+            Located just half a mile from Fenton Lake and 2 miles north of the vibrant downtown Fenton area.
+            This development will begin breaking ground in summer of 2022. Rolling hills, large wooded areas, 
+            secluded walking trails are just some of the attractions of this coming development. 
+            Located just half a mile from Fenton Lake and 2 miles north of the vibrant downtown Fenton area.
+          This development will begin breaking ground in summer of 2022. Rolling hills, large wooded areas, 
+          secluded walking trails are just some of the attractions of this coming development. 
+          Located just half a mile from Fenton Lake and 2 miles north of the vibrant downtown Fenton area.
+          This development will begin breaking ground in summer of 2022. Rolling hills, large wooded areas, 
+          secluded walking trails are just some of the attractions of this coming development. 
+          Located just half a mile from Fenton Lake and 2 miles north of the vibrant downtown Fenton area.
+          This development will begin breaking ground in summer of 2022. Rolling hills, large wooded areas, 
+          secluded walking trails are just some of the attractions of this coming development. 
+          Located just half a mile from Fenton Lake and 2 miles north of the vibrant downtown Fenton area.
+          This development will begin breaking ground in summer of 2022. Rolling hills, large wooded areas, 
+          secluded walking trails are just some of the attractions of this coming development. 
+          Located just half a mile from Fenton Lake and 2 miles north of the vibrant downtown Fenton area.
+          This development will begin breaking ground in summer of 2022. Rolling hills, large wooded areas, 
+          secluded walking trails are just some of the attractions of this coming development. 
+          Located just half a mile from Fenton Lake and 2 miles north of the vibrant downtown Fenton area.`
   }
 } 
