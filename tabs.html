@@ -62,11 +62,25 @@
       }
       img {
         height: calc(100vh - 45px);
+        max-height: 378px;
+      }
+      .header-container {
+        background-color: white;
+        height: 100%;
+        overflow: hidden;
+        display: grid;
+      }
+      #header {
+        font-size: 1.4em;
+        font-weight: bold;
+        margin: 5px 0px;
       }
     </style>
   </head>
   <body>
-
+    <div class="header-container">
+      <div id="header">Fenton Project</div>
+    </div>
     <!-- Tab buttons -->
     <div class="tab-container">
       <button class="tab active" onclick="openTab(event, 'tab1')">Overview</button>
