@@ -119,11 +119,63 @@
     max-height: 34px!important
     }
 
+     /* Full-screen modal overlay styles */
+     .modal-overlay {
+      display: none; /* Hidden by default */
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100vw;
+      height: 100vh;
+      background-color: rgba(0, 0, 0, 0.1); /* Semi-transparent background */
+      z-index: 100000;
+      justify-content: center;
+      align-items: center;
+    }
+
+    /* Modal content box */
+    .modal-content {
+      background-color: white;
+      padding: 20px;
+      border-radius: 8px;
+      width: 80%;
+      height: 40vh;
+      max-width: 600px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+      text-align: center;
+    }
+
+    /* Close button styles */
+    .close-btn {
+      cursor: pointer;
+      color: #888;
+      font-size: 18px;
+      position: absolute;
+      top: 10px;
+      right: 20px;
+    }
+
+    .close-btn:hover {
+      color: #333;
+    }
+
     </style>
   </head>
   <body>
     <div class="header-container">
       <div id="header"></div>
+        <!-- Button to open the modal -->
+  <button onclick="openModal()">Open Full-Screen Modal</button>
+
+  <!-- Modal structure -->
+  <div id="fullScreenModal" class="modal-overlay">
+    <div class="modal-content">
+      <span class="close-btn" onclick="closeModal()">&times;</span>
+      <h2>Centered Modal Content</h2>
+      <p>This modal simulates a full-screen experience within the iframe's viewport.</p>
+    </div>
+  </div>
+
     </div>
 
     <!-- Tab buttons -->
@@ -179,6 +231,23 @@
         document.getElementById('header').innerHTML = tabsInfo[locationKey]['header'];
       }
 
+      function openPopup() {
+        // Define the pop-up window size
+        const width = 600;
+        const height = 400;
+        
+        // Calculate the position to center the window on the screen
+        const left = (window.screen.width - width) / 2;
+        const top = (window.screen.height - height) / 2;
+
+        // Open the pop-up window with calculated position and size
+        window.open(
+          'https://www.example.com', 
+          'popupWindow', 
+          `width=${width},height=${height},top=${top},left=${left},scrollbars=yes,resizable=yes`
+        );
+      }
+
       window.onload = function() {
         const params = getQueryParams();
         const locationKey = params['location'] || 'default';
@@ -187,5 +256,48 @@
         loadHeader(locationKey)
       };
     </script>
+      <script>
+        // Function to open the modal and request full-screen mode
+        function openModal() {
+          const modal = document.getElementById('fullScreenModal');
+          modal.style.display = 'flex';
+    
+          // Request fullscreen mode for the iframe document
+          if (document.documentElement.requestFullscreen) {
+            document.documentElement.requestFullscreen();
+          } else if (document.documentElement.mozRequestFullScreen) { // Firefox
+            document.documentElement.mozRequestFullScreen();
+          } else if (document.documentElement.webkitRequestFullscreen) { // Chrome, Safari, Opera
+            document.documentElement.webkitRequestFullscreen();
+          } else if (document.documentElement.msRequestFullscreen) { // IE/Edge
+            document.documentElement.msRequestFullscreen();
+          }
+        }
+    
+        // Function to close the modal and exit full-screen mode
+        function closeModal() {
+          const modal = document.getElementById('fullScreenModal');
+          modal.style.display = 'none';
+    
+          // Exit fullscreen mode
+          if (document.exitFullscreen) {
+            document.exitFullscreen();
+          } else if (document.mozCancelFullScreen) { // Firefox
+            document.mozCancelFullScreen();
+          } else if (document.webkitExitFullscreen) { // Chrome, Safari, Opera
+            document.webkitExitFullscreen();
+          } else if (document.msExitFullscreen) { // IE/Edge
+            document.msExitFullscreen();
+          }
+        }
+    
+        // Optional: Close modal if the user clicks outside the modal content
+        window.onclick = function(event) {
+          const modal = document.getElementById('fullScreenModal');
+          if (event.target == modal) {
+            closeModal();
+          }
+        }
+      </script>
   </body>
 </html>
