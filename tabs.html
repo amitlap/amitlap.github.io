@@ -257,47 +257,23 @@
       };
     </script>
       <script>
-        // Function to open the modal and request full-screen mode
-        function openModal() {
-          const modal = document.getElementById('fullScreenModal');
-          modal.style.display = 'flex';
-    
-          // Request fullscreen mode for the iframe document
-          if (document.documentElement.requestFullscreen) {
-            document.documentElement.requestFullscreen();
-          } else if (document.documentElement.mozRequestFullScreen) { // Firefox
-            document.documentElement.mozRequestFullScreen();
-          } else if (document.documentElement.webkitRequestFullscreen) { // Chrome, Safari, Opera
-            document.documentElement.webkitRequestFullscreen();
-          } else if (document.documentElement.msRequestFullscreen) { // IE/Edge
-            document.documentElement.msRequestFullscreen();
-          }
-        }
-    
-        // Function to close the modal and exit full-screen mode
-        function closeModal() {
-          const modal = document.getElementById('fullScreenModal');
-          modal.style.display = 'none';
-    
-          // Exit fullscreen mode
-          if (document.exitFullscreen) {
-            document.exitFullscreen();
-          } else if (document.mozCancelFullScreen) { // Firefox
-            document.mozCancelFullScreen();
-          } else if (document.webkitExitFullscreen) { // Chrome, Safari, Opera
-            document.webkitExitFullscreen();
-          } else if (document.msExitFullscreen) { // IE/Edge
-            document.msExitFullscreen();
-          }
-        }
-    
-        // Optional: Close modal if the user clicks outside the modal content
-        window.onclick = function(event) {
-          const modal = document.getElementById('fullScreenModal');
-          if (event.target == modal) {
-            closeModal();
-          }
-        }
+   // Function to open the modal
+   function openModal() {
+      document.getElementById('fullScreenModal').style.display = 'flex';
+    }
+
+    // Function to close the modal
+    function closeModal() {
+      document.getElementById('fullScreenModal').style.display = 'none';
+    }
+
+    // Listen for messages from the iframe
+    window.addEventListener('message', function(event) {
+      // Check if the message is the specific request to open the modal
+      if (event.data === 'openFullscreenModal') {
+        openModal();
+      }
+    });
       </script>
   </body>
 </html>
