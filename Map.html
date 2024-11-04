@@ -8,11 +8,44 @@
   <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
   integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
   crossorigin=""/>
+
+
+
   <style>
     /* Set the map height */
-    #map {
+   /* #map {
       height: 100vh;
       width: 100%;
+    }*/
+
+    #map {
+      height: 100vh;
+      width: 100%; /* Adjust as needed */
+      float: left;
+    }
+    #sidebar {
+      position: absolute;
+        top: 0;
+        right: 0;
+        height: 95%;
+        width: 300px; /* Adjust width as needed */
+        background-color: #f1f1f1;
+        box-shadow: -2px 0 5px rgba(0, 0, 0, 0.2);
+        overflow-y: auto;
+        padding: 20px;
+        display: none; /* Hidden by default */
+        z-index: 1000; /* Ensure it appears above the map */
+    }
+
+    #sidebar {
+      transition: transform 2s ease;
+      transform: translateX(100%); /* Initially hidden */
+    }
+
+    #sidebar.show {
+      transition: transform 2s ease;
+      transform: translateX(0); /* Slide into view */
+      right: 0;
     }
 
     .leaflet-popup-content {
@@ -22,22 +55,62 @@
       font-size: 1.08333em;
       min-height: 1px;
     }
+
+    .panel {
+    visibility: visible;
+    position: absolute;
+    bottom: var(--panel-bottom);
+    overflow-x: auto;
+    z-index: 10000;
+    background-color: white;
+    color: black;
+    cursor: initial;
+    border-radius: 5px;
+    border: 1px solid black;
+    bottom: calc(var(--current-footer-height) + var(--panel-bottom));
+    box-sizing: border-box;
+    counter-reset: step
+}
+
+.panel.dark {
+    border: 1px solid #222
+}
+
+.panel.full {
+    width: initial;
+    right: -100%;
+    z-index: calc(var(--zindex-panels) + 1)
+}
+
+.panel.full.on {
+    visibility: visible;
+    right: calc(var(--panel-gutter) * 2 + var(--control-size));
+    left: calc(var(--panel-gutter) * 2 + var(--control-size));
+    height: initial;
+    max-height: initial
+}
   </style>
 </head>
 <body>
   <!-- Map container -->
   <div id="map"></div>
 
+  <div class="panel" id="sidebar1">
+    <h2>Details</h2>
+    <div id="details"></div>
+  </div>
+
   <!-- Leaflet JS -->
   <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
   integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
   crossorigin=""></script>
+
   <!-- Custom JavaScript -->
   <script>
     var map = L.map('map').setView([42.842556, -83.740883], 13);
 
 L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
-    attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+    attribution: '© OpenStreetMap contributors'
 }).addTo(map);
 
 /*L.marker([42.842556, -83.740883]).addTo(map)
@@ -75,6 +148,36 @@ marker.on('mouseover', function () {
 marker.on('mouseout', function () {
   this.closeTooltip();
 });
+
+marker.on('click', function () {
+      // Get the sidebar element and details container
+      const sidebar = document.getElementById('sidebar1');
+      const details = document.getElementById('details');
+
+      // Populate the details (customize as needed)
+      details.innerHTML = `
+        <p><strong>Location:</strong> Example Location</p>
+        <p><strong>Description:</strong> This is a description of the clicked location.</p>
+      `;
+
+      // Show the sidebar
+      sidebar.style.display = 'block';
+
+      sidebar.classList.add('panel.full.on');
+      sidebar.classList.add('panel.full');
+     // sidebar.classList.add('show');
+    });
+
+    // Optional: Add a method to close the sidebar
+    document.getElementById('sidebar1').addEventListener('click', function () {
+      this.style.display = 'none';
+      closeSidebar();
+    });
+
+    function closeSidebar() {
+  const sidebar = document.getElementById('sidebar1');
+  sidebar.classList.remove('show');
+}
 
   </script>
 </body>
