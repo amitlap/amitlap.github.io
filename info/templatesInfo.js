@@ -31,6 +31,35 @@ const tabsInfo = {
         <p>Details about the Fenton project. This area is known for its rolling hills, wooded trails, and proximity to downtown Fenton.</p>
       `
     },
+    FentonFarmsGolfClub: {
+      header: `מועדון גולף פנטון פארמס`,
+      overview: `
+        <p>סקירה כללית: מגרש גולף ציבורי עם 18 גומות, אווירה נינוחה ושטחים פתוחים ומטופחים שיספקו חוויה מהנה לשחקני גולף בכל הרמות והמיומנויות..</p>
+      `,
+      photos: `
+        <div id="carousel1" class="carousel slide">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img src="https://brookwood.co.il/wp-content/uploads/2022/09/Fenton_Units_color.jpg" class="d-block w-100" alt="fenton-demo">
+            </div>
+            <div class="carousel-item">
+              <img src="https://brookwood.co.il/wp-content/uploads/2022/10/fenton-demo.jpg" class="d-block w-100" alt="fenton-demo">
+            </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carousel1" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carousel1" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+      `,
+      details: `
+        <p>פירוט: מועדון הגולף פנטון פארמס, שנוסד ב-1939 משתרע על פני שטח של 6 ק״מ והוא מציע מסלולים נגישים למתחילים לצד מסלולים מאתגרים לשחקנים מנוסים יותר. במקום תמצאו גם מועדון המהווה מקום מפגש ואירוח עם פעילויות עבור בני הגיל השלישי. במהלך ימות השבוע, בין שני לחמישי, תוכלו להנות מהמתקנים בתעריפים מוזלים יותר. לפרטים נוספים, בקרו באתר: https://www.fentonfarms.com/rates/</p>
+      `
+    },
     SpringMeadowsCountryClub: {
       header: `Fenton Farms Golf Club`,
       overview: `
