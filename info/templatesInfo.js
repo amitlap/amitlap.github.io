@@ -39,10 +39,13 @@ const tabsInfo = {
       <div id="carousel1" class="carousel slide">
         <div class="carousel-inner">
           <div class="carousel-item active">
-            <img src="https://brookwood.co.il/wp-content/uploads/2022/09/Fenton_Units_color.jpg" class="d-block w-100" alt="fenton-demo">
+            <img src="https://aerialgraphics.com/img/v/640/480/4674/Fenton.jpg" class="d-block w-100" alt="fenton-demo">
           </div>
           <div class="carousel-item">
-            <img src="https://brookwood.co.il/wp-content/uploads/2022/10/fenton-demo.jpg" class="d-block w-100" alt="fenton-demo">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSTDUCJti7zhT1Wq8AqbaWuk3-fTUDrEcsxkg&s" class="d-block w-100" alt="fenton-demo">
+          </div>
+          <div class="carousel-item">
+            <img src="https://tyronewoodsmhc.com/wp-content/uploads/2021/07/Lake-Home-House.jpg" class="d-block w-100" alt="fenton-demo">
           </div>
         </div>
         <button class="carousel-control-prev" type="button" data-bs-target="#carousel1" data-bs-slide="prev">
@@ -66,10 +69,13 @@ const tabsInfo = {
         <div id="carousel1" class="carousel slide">
           <div class="carousel-inner">
             <div class="carousel-item active">
-              <img src="https://brookwood.co.il/wp-content/uploads/2022/09/Fenton_Units_color.jpg" class="d-block w-100" alt="fenton-demo">
+              <img src="https://lh3.googleusercontent.com/p/AF1QipOQww6FaihosHvA1askMAbo9tfURJXbbsRTUBl9=s680-w680-h510" class="d-block w-100" alt="fenton-demo">
             </div>
             <div class="carousel-item">
-              <img src="https://brookwood.co.il/wp-content/uploads/2022/10/fenton-demo.jpg" class="d-block w-100" alt="fenton-demo">
+              <img src="https://lh3.googleusercontent.com/p/AF1QipNWH0UjH4fEB7DzGeo683wMUGTRgxI6-fI7qJt_=s680-w680-h510" class="d-block w-100" alt="fenton-demo">
+            </div>
+            <div class="carousel-item">
+              <img src="https://lh3.googleusercontent.com/p/AF1QipMCYTtV6i1fOQFB2DzLY2eksbC2Dw2nHiC-Z4aS=s680-w680-h510" class="d-block w-100" alt="fenton-demo">
             </div>
           </div>
           <button class="carousel-control-prev" type="button" data-bs-target="#carousel1" data-bs-slide="prev">
@@ -131,10 +137,13 @@ const tabsInfo = {
       <div id="carousel2" class="carousel slide">
         <div class="carousel-inner">
           <div class="carousel-item active">
-            <img src="https://example.com/brookwood1.jpg" class="d-block w-100" alt="brookwood-demo">
+            <img src="https://lh5.googleusercontent.com/p/AF1QipNj39wA2HnwvHNFQOAgtd38ti9-3l5RX2SgtImV=w408-h544-k-no" class="d-block w-100" alt="brookwood-demo">
           </div>
           <div class="carousel-item">
-            <img src="https://example.com/brookwood2.jpg" class="d-block w-100" alt="brookwood-demo">
+            <img src="https://lh5.googleusercontent.com/p/AF1QipMyGKS9sV5NDDe2sgNpSMac_O6eJsCqRx3lUMXZ=w408-h1200-k-no" class="d-block w-100" alt="brookwood-demo">
+          </div>
+          <div class="carousel-item">
+            <img src="https://lh5.googleusercontent.com/p/AF1QipM610gPXw9_z4EGKr_pL_H5aNS6oejFEC0J2Wr1=w408-h306-k-no" class="d-block w-100" alt="brookwood-demo">
           </div>
         </div>
         <button class="carousel-control-prev" type="button" data-bs-target="#carousel2" data-bs-slide="prev">
@@ -151,15 +160,21 @@ const tabsInfo = {
     },
     SevenLakesStatePark: {
       header: `פארק שבעת האגמים`,
-      overview: `<p>סקירה כללית: פארק ציבורי שמשתרע על פני 1,434 דונם של אגמים, שבילי הליכה ואיזורי פיקניק.</p>`,
+      overview: `
+      <p>סקירה כללית: פארק ציבורי שמשתרע על פני 1,434 דונם של אגמים, שבילי הליכה ואיזורי פיקניק.</p>
+      <a href="https://www.michigandnr.com/parksandtrails/details.aspx?id=492&type=SPRK" target="_blank" rel="noopener noreferrer">אתר המקום</a>
+      `,
       photos: `
       <div id="carousel2" class="carousel slide">
         <div class="carousel-inner">
           <div class="carousel-item active">
-            <img src="https://example.com/brookwood1.jpg" class="d-block w-100" alt="brookwood-demo">
+            <img src="https://www2.dnr.state.mi.us/parksandtrails/images/SPRK/492/birds_eye_view_of_boating_access_site_and_road.jpg" class="d-block w-100" alt="brookwood-demo">
+          </div>
+          <div class="carousel-item active">
+            <img src="https://www2.dnr.state.mi.us/parksandtrails/images/SPRK/492/birds_eye_view_of_forested_land_and_lake.jpg" class="d-block w-100" alt="brookwood-demo">
           </div>
           <div class="carousel-item">
-            <img src="https://example.com/brookwood2.jpg" class="d-block w-100" alt="brookwood-demo">
+            <img src="https://www2.dnr.state.mi.us/parksandtrails/images/SPRK/492/_seven_lakes.jpg" class="d-block w-100" alt="brookwood-demo">
           </div>
         </div>
         <button class="carousel-control-prev" type="button" data-bs-target="#carousel2" data-bs-slide="prev">
@@ -176,15 +191,15 @@ const tabsInfo = {
     },
     McLarenFentonMedicalCenter: {
       header: `מרכז רפואי מקלרן פנטון`,
-      overview: `<p>סקירה כללית: מרכז רפואי איכותי ומקיף בו ניתן לבצע בדיקות ולקבל מגוון שירותי בריאות, במרחק קצר מהבית. </p>`,
+      overview: `
+      <p>סקירה כללית: מרכז רפואי איכותי ומקיף בו ניתן לבצע בדיקות ולקבל מגוון שירותי בריאות, במרחק קצר מהבית. </p>
+      <a href="https://www.mclaren.org/main/locations/mclaren-flint-fenton-community-medical-center-339?utm_source=loc-339&utm_medium=organic&utm_campaign=google-my-business&utm_content=gmb&y_source=1_MjI2Mjg0NzAtNzE1LWxvY2F0aW9uLndlYnNpdGU%3D" target="_blank" rel="noopener noreferrer">אתר המקום</a>
+      `,
       photos: `
       <div id="carousel2" class="carousel slide">
         <div class="carousel-inner">
           <div class="carousel-item active">
-            <img src="https://example.com/brookwood1.jpg" class="d-block w-100" alt="brookwood-demo">
-          </div>
-          <div class="carousel-item">
-            <img src="https://example.com/brookwood2.jpg" class="d-block w-100" alt="brookwood-demo">
+            <img src="https://lh5.googleusercontent.com/p/AF1QipNBLUrv7BhYfdP5X0XwYeGFWM96AGTIEF6iWqkS=w426-h240-k-no" class="d-block w-100" alt="brookwood-demo">
           </div>
         </div>
         <button class="carousel-control-prev" type="button" data-bs-target="#carousel2" data-bs-slide="prev">
