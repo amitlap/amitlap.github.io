@@ -1,4 +1,5 @@
 // info.js
+//ex: ?location='FentonProject'
 
 const tabsInfo = {
     FentonProject: {
@@ -92,15 +93,19 @@ const tabsInfo = {
       header: `הקאנטרי קלאב בספרינג מדוז`,
       overview: `
         <p>סקירה כללית: קאנטרי קלאב עם מגרשי גולף, פעילויות ספורט ואירועים חברתיים. מקום מושלם לאנשים שרוצים להתערבב, להרחיב את המעגל החברתי ולהמצא בסביבה נעימה עם אוירה תומכת, חברית וקהילתית.</p>
+                <a href="https://www.springmeadowscountryclub.com/" target="_blank" rel="noopener noreferrer">אתר המקום</a>
       `,
       photos: `
         <div id="carousel2" class="carousel slide">
           <div class="carousel-inner">
             <div class="carousel-item active">
-              <img src="https://example.com/brookwood1.jpg" class="d-block w-100" alt="brookwood-demo">
+              <img src="https://static.wixstatic.com/media/622034_ab0a78f8346a48e0a918fe0dea27f941~mv2.jpg/v1/fill/w_1743,h_1000,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/622034_ab0a78f8346a48e0a918fe0dea27f941~mv2.jpg" class="d-block w-100" alt="brookwood-demo">
             </div>
             <div class="carousel-item">
-              <img src="https://example.com/brookwood2.jpg" class="d-block w-100" alt="brookwood-demo">
+              <img src="https://static.wixstatic.com/media/ed1f57_d5c86839653e4f39ad549d12ba6a0094~mv2.jpg/v1/crop/x_212,y_0,w_1496,h_1080/fill/w_313,h_226,al_c,q_80,usm_0.66_1.00_0.01,enc_auto/DSC00492.jpg" class="d-block w-100" alt="brookwood-demo">
+            </div>
+            <div class="carousel-item">
+              <img src="https://static.wixstatic.com/media/622034_64a5b431ed9749689843073175ec64da~mv2.jpg/v1/crop/x_244,y_0,w_3545,h_3024/fill/w_313,h_267,al_c,q_80,usm_0.66_1.00_0.01,enc_auto/2022%20Folds%20of%20Honor%20Photo%201.jpg" class="d-block w-100" alt="brookwood-demo">
             </div>
           </div>
           <button class="carousel-control-prev" type="button" data-bs-target="#carousel2" data-bs-slide="prev">
