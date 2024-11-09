@@ -66,8 +66,7 @@ const tabsInfo = {
       header: `מועדון גולף פנטון פארמס`,
       overview: `
         <p>סקירה כללית: מגרש גולף ציבורי עם 18 גומות, אווירה נינוחה ושטחים פתוחים ומטופחים שיספקו חוויה מהנה לשחקני גולף בכל הרמות והמיומנויות..</p>
-      `,
-      photos: `
+
         <div id="carousel1" class="carousel slide">
           <div class="carousel-inner">
             <div class="carousel-item active">
@@ -102,6 +101,7 @@ const tabsInfo = {
       overview: `
         <p>סקירה כללית: קאנטרי קלאב עם מגרשי גולף, פעילויות ספורט ואירועים חברתיים. מקום מושלם לאנשים שרוצים להתערבב, להרחיב את המעגל החברתי ולהמצא בסביבה נעימה עם אוירה תומכת, חברית וקהילתית.</p>
         <a href="https://www.springmeadowscountryclub.com/" target="_blank" rel="noopener noreferrer">אתר המקום</a>
+        
       <div id="carousel2" class="carousel slide">
         <div class="carousel-inner">
           <div class="carousel-item active">
