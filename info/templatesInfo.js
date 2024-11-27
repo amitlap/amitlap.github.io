@@ -8,7 +8,7 @@ const tabsInfo = {
         <p>במדינת מישיגן, מרחק נסיעה קצרה מהעיר הגדולה, טיילור, שוכנת לה פנטון – עיר קטנה עם קסם ייחודי ואווירה פסטורלית. פנטון ידועה בזכות הקהילה החמה שלה, השלווה והמרחבים הירוקים, מה שהופך אותה לבחירה מושלמת עבור בני הגיל השלישי שמחפשים איכות חיים ברמה גבוהה, מקום אטרקטיבי לבלות בו את ימי הפרישה והטבות מס משמעותיות. 
 
 המתחם שיוקם יאפשר לכם להנות משירותי סיעוד, טיפול אישי ובריאותי, השגחה, נקיון, פעילויות חברתיות ופנאי. כמו כן, יסופקו בו שירותי פיקוח וסיוע 24 שעות ביממה המאפשרים מקסום של איכות חיי התושבים, אוטונומיה, פרטיות, עצמאות ובטיחות..</p>
-        <a href="https://brookwood.co.il/project/brookwood-estates-fenton" target="_blank" rel="noopener noreferrer">View Fenton project page</a>
+        <a href="https://brookwood.co.il/project/brookwood-estates-fenton" target="_blank" rel="noopener noreferrer">אתר הפרוייקט</a>
 
         <div id="carousel1" class="carousel slide">
           <div class="carousel-inner">
