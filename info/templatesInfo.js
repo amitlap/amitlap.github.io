@@ -3,7 +3,7 @@
 
 const tabsInfo = {
     FentonProject: {
-      header: `Fenton Project`,
+      header: `מתחם המגורים`,
       overview: `
         <p>במדינת מישיגן, מרחק נסיעה קצרה מהעיר הגדולה, טיילור, שוכנת לה פנטון – עיר קטנה עם קסם ייחודי ואווירה פסטורלית. פנטון ידועה בזכות הקהילה החמה שלה, השלווה והמרחבים הירוקים, מה שהופך אותה לבחירה מושלמת עבור בני הגיל השלישי שמחפשים איכות חיים ברמה גבוהה, מקום אטרקטיבי לבלות בו את ימי הפרישה והטבות מס משמעותיות. 
 
@@ -215,6 +215,35 @@ const tabsInfo = {
       `,
       
       details: `פירוט: פארק שבעת האגמים הוא מקום נפלא להעביר בו את שבת בבוקר. יש בו, ממש כמו שמסגיר השם, שבעה אגמים, כשהגדול בהם משתרע על פני שטח של 170 דונם. תוכלו לדוג בו, לצאת לשייט ואפילו לשחות! בנוסף, ישנם שבילי הליכה נעימים, מטופחים ומזמינים שאין לנו ספק שתהנו לצעוד בהם. בין אם בא לכם פעילות מרגיעה ובין אם תרצו משהו יותר אקטיבי, בפארק שבעת האגמים כל האפשרויות עומדות לרשותכם.`
+    },
+    FentonCity: {
+      header: `העיר פנטון`,
+      overview: `
+      <p>
+העיר פנטון ממוקמת בחלקה התחתון של מרכז מדינת מישיגן (Lower Mid-Michigan), ומציעה גישה נוחה לכביש המהיר US 23 משלושה מוקדים מרכזיים: רחוב אוון (Owen Road), כביש סילבר לייק (Silver Lake Road) וכביש נורת' רוד (North Road).
+הגישה המהירה הזו הופכת את פנטון לנקודת מוצא מצוינת לנסיעה לערים מרכזיות במישיגן, כמו: אן ארבור, פלינט, לאנסינג ודטרויט. כל אלה נמצאות במרחק של עד שעה נסיעה, מה שהופך את פנטון לאידיאלית עבור אלו שמחפשים ליהנות משקט ופסטורליות מבלי לוותר על הקרבה למרכזי התרבות, התעסוקה והמסחר של מישיגן.
+      </p>
+
+      <div id="carousel2" class="carousel slide">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="https://thumbs.dreamstime.com/b/landscape-trees-fenton-park-fenton-park-town-fenton-city-stoke-trent-staffordshire-england-united-kingdom-202339907.jpg" class="d-block w-100" alt="brookwood-demo">
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carousel2" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carousel2" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+
+      <p>
+     מרכז רפואי מקלרן פנטון מציע מגוון שירותים רפואיים, בינהם, רפואה דחופה, בדיקות מומחים, מכוני דימות ושירותי מעבדה. המצאותו של מרכז רפואי איכותי, מקצועי ומקיף בסמוך לסביבת המגורים, מבטיח גישה מהירה לשירותי בריאות, בדיקות שגרתיות וטיפול מהיר במידת הצורך.
+      </p>
+      `,
     },
     McLarenFentonMedicalCenter: {
       header: `מרכז רפואי מקלרן פנטון`,
