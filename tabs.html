@@ -63,13 +63,6 @@
       .tab-content {
         display: none; /* Hide all tab content by default */
         padding: 0px;
-        overflow-y: scroll; /* Allow vertical scrolling */
-        height: calc(100vh - 90px);  /*Full height minus header and tab bar */
-        scrollbar-width: none; /* Hide scrollbar for Firefox */
-      }
-
-      .tab-content::-webkit-scrollbar {
-        display: none; /* Hide scrollbar for Chrome, Safari, and Edge */
       }
 
       /* Show the active tab content */
@@ -130,6 +123,12 @@
         /* Scrollbar thumb on hover */
         ::-webkit-scrollbar-thumb:hover {
         background-color: #555; /* Darker thumb color on hover */
+      }
+
+      .umap-div-icon .icon_container img {
+        vertical-align: middle;
+        max-width: 34px!important;
+        max-height: 34px!important
       }
 
     </style>
