@@ -15,7 +15,6 @@
       display: flex;
       flex-direction: column;
       height: 100vh;
-      width: 100vw;
       margin: auto;
     }
     .header {
@@ -34,12 +33,14 @@
       flex: 1;
       display: flex;
       flex-direction: column; /* Default for mobile */
+      border: 1px solid #ddd;
     }
     .description {
       padding: 20px;
       background-color: #f9f9f9;
       border-left: none;
-      border-bottom: 1px solid #ddd;
+      border-right: none;
+      border: 1px solid #ddd;
       box-sizing: border-box;
       direction: rtl;
       text-align: justify;
@@ -48,6 +49,7 @@
       flex: 1;
       position: relative;
       min-height: 550px;
+      border: 1px solid #ddd;
     }
     iframe {
       width: 100%;
@@ -56,7 +58,6 @@
     }
     .footer {
       background-color: #f1f1f1;
-      border-top: 1px solid #ddd;
       padding: 15px;
       direction: rtl;
     }
@@ -83,10 +84,15 @@
         width: 60%; /* Map on the left */
         border-right: 1px solid #ddd; /* Add border between map and description */
       }
-      .description {
-        width: 40%; /* Description on the right */
+      .description{
+        /*width: 40%; /* Description on the right */
         padding: 30px; /* Extra padding for desktop */
         border-bottom: none; /* Remove bottom border */
+      }
+      .footer {
+        width: 90vw;
+        padding: 15px 30px;
+        margin: 0px auto;
       }
     }
 
@@ -118,14 +124,14 @@
 
       <div class="description">
         <div>
-          המפה האינטראקטיבית תציג לקהל היעד את כל מה שחשוב לו למצא במקום שבו הוא מעוניין לגור או להשקיע.<br>
+          המפה האינטראקטיבית תציג לקהל היעד את כל מה שחשוב לו למצא במקום שבו הוא מעוניין לגור או להשקיע.
           <strong>במבט חטוף, ניתן יהיה להבין את הפוטנציאל</strong> ולהעריך עד כמה הפרויקט יענה על צרכי ההשקעה.<br><br>
           כל מפה נבנית בהתאמה אישית והיא מציגה את <strong>נקודות העניין הרצויות והרלוונטיות ביותר לאוכלוסיית היעד</strong>,
-          יחד עם ציון המרחק בין כל נקודה לאתר הפרויקט.<br>
+          יחד עם ציון המרחק בין כל נקודה לאתר הפרויקט.
   
           כך ניתן ללמוד את השטח בקלות, גם מרחוק, ולהתרשם מכדאיות ההשקעה.<br><br>
   
-          הצגת המפה באתר תהפוך את הפרוייקט שלכם<strong>למוחשי, אטרקטיבי ואינפורמטיבי </strong>יותר –
+          הצגת המפה באתר תהפוך את הפרוייקט שלכם <strong>למוחשי, אטרקטיבי ואינפורמטיבי </strong>יותר –
           ותעניק לכם יתרון ברור מול המתחרים:<br><br>
   
           <ul>
